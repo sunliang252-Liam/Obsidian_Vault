@@ -11,10 +11,14 @@
             "id": "5dc4af2c24376463",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "test.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "test"
             }
           }
         ]
@@ -178,5 +182,7 @@
     }
   },
   "active": "5dc4af2c24376463",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "test.md"
+  ]
 }
