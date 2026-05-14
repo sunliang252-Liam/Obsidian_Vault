@@ -11,28 +11,33 @@
             "id": "d836860b66cbe0e3",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
-            }
-          },
-          {
-            "id": "3c1277af423fd755",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "百龙创园.md",
-                "mode": "source",
-                "source": false
+                "file": "00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文.pdf"
               },
-              "icon": "lucide-file",
-              "title": "百龙创园"
+              "icon": "lucide-file-text",
+              "title": "张晓燕论文全文"
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "02790643becdbceb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f5bfe71b343fa33f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文_translated.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "张晓燕论文全文_translated"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -89,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "e53d24fb8c2eaca5",
@@ -167,21 +173,31 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "百龙创园.md",
-                "followCursor": false,
-                "showSearch": false,
+                "file": "00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文_translated.pdf",
+                "followCursor": true,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "百龙创园 的大纲"
+              "title": "张晓燕论文全文_translated 的大纲"
+            }
+          },
+          {
+            "id": "3efb6487776bca98",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,24 +213,45 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "3c1277af423fd755",
+  "active": "f5bfe71b343fa33f",
   "lastOpenFiles": [
-    "房里春树暮云黑暗.md",
-    "悲喜困苦蔊顺时而动lsakjfsaldjfsdklfj.md",
-    "百龙创园.md",
-    "北化股份.md",
-    "大湖股份.md",
-    "海能达.md",
-    "航发动力2025年年报分析.md",
-    "华友钴业.md",
-    "徐留胜背景调查.md",
-    "欢迎.md",
-    "2026-04-07.md",
-    "未命名.base",
+    "00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文.pdf",
+    "00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文_translated.pdf",
+    "02_Company_Analysis/002396_SZ_星网锐捷.md",
+    "00_Inbox/Archive/未命名/未命名.md",
+    "00_Inbox/Archive/未命名/张晓燕的论文深入研究/未命名",
+    "00_Inbox/Archive/未命名/未命名 1",
+    "00_Inbox/Archive/未命名/张晓燕的论文深入研究",
+    "未命名 2",
+    "未命名 1",
+    "未命名",
+    "02_Company_Analysis/301680_SZ_固德电材.md",
+    "02_Company_Analysis/00_Company_Index.md",
+    "02_Company_Analysis/603288_SH_海天味业.md",
+    "02_Company_Analysis/002507_SZ_涪陵榨菜.md",
+    "02_Company_Analysis/002495_SZ_佳隆股份.md",
+    "02_Company_Analysis/000333_SZ_美的集团.md",
+    "02_Company_Analysis/601800_SH_中国交建.md",
+    "02_Company_Analysis/601186_SH_中国铁建.md",
+    "02_Company_Analysis/行业_基建市政工程.md",
+    "02_Company_Analysis/601390_SH_中国中铁.md",
+    "02_Company_Analysis/003015_SZ_日久光电.md",
+    "02_Company_Analysis/行业_军工电子Ⅲ.md",
+    "02_Company_Analysis/行业_底盘与发动机系统.md",
+    "02_Company_Analysis/行业_涂料油墨.md",
+    "02_Company_Analysis/行业_其他化学制品.md",
+    "02_Company_Analysis/601226_SH_华电科工.md",
+    "02_Company_Analysis/行业_线缆部件及其他.md",
+    "02_Company_Analysis/行业_体外诊断.md",
+    "02_Company_Analysis/301113_SZ_雅艺科技.md",
+    "02_Company_Analysis/002391_SZ_长青股份.md",
+    "02_Company_Analysis/000553_SZ_安道麦A.md",
+    "02_Company_Analysis/688628_SH_优利德.md",
+    "02_Company_Analysis/000001_SZ_平安银行.md",
+    "02_Company_Analysis/low_confidence.csv",
     "未命名.canvas",
-    "Python接口使用手册.pdf",
-    "Welcome.md",
-    "Untitled 1.base",
-    "Untitled.base"
+    "04_Resources/通达信iTendx终端介绍.pptx",
+    "00_Inbox/Archive/未命名.canvas",
+    "00_Inbox/未命名.canvas"
   ]
 }
