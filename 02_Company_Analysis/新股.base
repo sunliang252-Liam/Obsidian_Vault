@@ -1,0 +1,16 @@
+filters:
+  and:
+    - file.hasTag("新股")
+views:
+  - type: table
+    name: 新股（上市不满一年）
+    order:
+      - file.name
+      - sw_l2
+      - list_date
+      - biz_type
+      - roe
+      - audit_high
+    sort:
+      - property: list_date
+        direction: DESC
