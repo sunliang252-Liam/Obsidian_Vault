@@ -1,0 +1,19 @@
+filters:
+  and:
+    - file.hasTag("行业深读")
+views:
+  - type: table
+    name: 行业景气排行
+    order:
+      - file.name
+      - n_stocks
+      - revenue_yoy
+      - np_yoy
+      - gross_margin
+      - roe
+      - pe
+      - np_sum_yi
+      - deep_note
+    sort:
+      - property: np_yoy
+        direction: DESC

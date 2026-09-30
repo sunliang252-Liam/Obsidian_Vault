@@ -1,0 +1,16 @@
+filters:
+  and:
+    - file.hasTag("审计高危")
+views:
+  - type: table
+    name: 审计风险榜
+    order:
+      - file.name
+      - sw_l2
+      - audit_high
+      - audit_medium
+      - biz_type
+      - roe
+    sort:
+      - property: audit_high
+        direction: DESC

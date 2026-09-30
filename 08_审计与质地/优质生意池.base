@@ -1,0 +1,19 @@
+filters:
+  and:
+    - file.hasTag("优质池")
+views:
+  - type: table
+    name: 优质生意池
+    order:
+      - file.name
+      - sw_l2
+      - roe
+      - roe_std_5y
+      - gross_margin
+      - ocf_ni
+      - debt_ratio
+      - biz_type
+      - audit_high
+    sort:
+      - property: roe
+        direction: DESC
