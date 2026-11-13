@@ -1,0 +1,19 @@
+
+# Smart Connections 索引缓存（体积大且可重建）
+.smart-env/
+
+# Obsidian 工作区状态（含本机路径，无需同步）
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 采集缓存与临时备份（不进库）
+.cache_cninfo/
+.backup_*/
+.trash/
+*.bak-*
+.tools/

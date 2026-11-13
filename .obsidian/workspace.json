@@ -1,55 +1,40 @@
 {
   "main": {
-    "id": "7f779659c0a39967",
+    "id": "e89188bd7fd86dfd",
     "type": "split",
     "children": [
       {
-        "id": "5b2324d413078f83",
+        "id": "87b2580e534cf214",
         "type": "tabs",
         "children": [
           {
-            "id": "5dc4af2c24376463",
+            "id": "db38d4ad7cbf678c",
             "type": "leaf",
             "state": {
               "type": "bases",
               "state": {
-                "file": "未命名 1.base",
-                "viewName": "表格"
+                "file": "02_Company_Analysis/公司档案主表.base",
+                "viewName": "全公司主表"
               },
               "icon": "lucide-table",
-              "title": "未命名 1"
-            }
-          },
-          {
-            "id": "d4bf47851ac66316",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02_Company_Analysis/光学光电子/000725_SZ_京东方Ａ.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "000725_SZ_京东方Ａ"
+              "title": "公司档案主表"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "a34f6cee5090e34f",
+    "id": "556e0e0a0262acff",
     "type": "split",
     "children": [
       {
-        "id": "53ff0834b1d80fbd",
+        "id": "f375c61fa3ea6470",
         "type": "tabs",
         "children": [
           {
-            "id": "a13be800d8b0564a",
+            "id": "5db9566c0f2848c0",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -64,13 +49,13 @@
             }
           },
           {
-            "id": "9f4ea06dbe46f831",
+            "id": "a3b6d95b2ea68fae",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
+                "query": "601021",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -81,35 +66,36 @@
             }
           },
           {
-            "id": "5fb0e5b79eba03ab",
+            "id": "5d52b63a2ee5c9ed",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "书签"
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 237.1328125
+    "width": 295.5
   },
   "right": {
-    "id": "9540d88d4d0e8657",
+    "id": "e53d24fb8c2eaca5",
     "type": "split",
     "children": [
       {
-        "id": "cfdc274e04d669c1",
+        "id": "ad521b8635d2fff0",
         "type": "tabs",
         "children": [
           {
-            "id": "6470839aa275d676",
+            "id": "225cfc4a7fcbb292",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Untitled 1.base",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,24 +105,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "Backlinks for Untitled 1"
             }
           },
           {
-            "id": "52e1305708703d06",
+            "id": "1bdb6f1250d1bdc9",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Untitled 1.base",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "Untitled 1 的出链列表"
             }
           },
           {
-            "id": "b982b8e6e10e61d7",
+            "id": "36ecbd4fee45ef56",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -147,11 +134,11 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "标签"
+              "title": "Tags"
             }
           },
           {
-            "id": "0131a7df553144f7",
+            "id": "4aaf3a9dec036475",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -165,7 +152,7 @@
             }
           },
           {
-            "id": "84ef1b2238100dde",
+            "id": "c9c7496e86f3a1a1",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -179,7 +166,27 @@
             }
           },
           {
-            "id": "0b25ca70c1d40f1b",
+            "id": "d6684c7e6e122bf8",
+            "type": "leaf",
+            "state": {
+              "type": "smart-env-status-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-env-status-view"
+            }
+          },
+          {
+            "id": "c0374fd3c5594878",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "c38ded4076d7367f",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -189,7 +196,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -197,67 +204,58 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "terminal:Open terminal": false,
       "vscode-editor:新建代码文件": false,
-      "obsidian-git:Open Git source control": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "obsidian-git:Open Git source control": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "d4bf47851ac66316",
+  "active": "db38d4ad7cbf678c",
   "lastOpenFiles": [
-    "02_Company_Analysis/光学光电子/000509_SZ_华塑控股.md",
-    "02_Company_Analysis/光学光电子/000100_SZ_TCL科技.md",
-    "02_Company_Analysis/光学光电子/000727_SZ_冠捷科技.md",
-    "02_Company_Analysis/光学光电子/000020_SZ_深华发Ａ.md",
-    "02_Company_Analysis/纺织制造/300918_SZ_南山智尚.md",
-    "02_Company_Analysis/新股.base",
-    "02_Company_Analysis/其他未分类/00_其他未分类.md",
-    "02_Company_Analysis/北交所/00_北交所名录.md",
-    "02_Company_Analysis/00_新股名录.md",
-    "02_Company_Analysis/北交所/920992_BJ_中科美菱.md",
-    "02_Company_Analysis/北交所/920985_SZ_海泰新能.md",
-    "02_Company_Analysis/北交所/920982_SZ_锦波生物.md",
-    "02_Company_Analysis/北交所/920981_BJ_晶赛科技.md",
-    "02_Company_Analysis/北交所/920976_BJ_视声智能.md",
-    "02_Company_Analysis/北交所/920978_BJ_开特股份.md",
-    "02_Company_Analysis/北交所/920974_BJ_凯大催化.md",
-    "02_Company_Analysis/北交所/920971_BJ_天马新材.md",
-    "02_Company_Analysis/北交所/920970_SZ_大禹生物.md",
-    "02_Company_Analysis/北交所/920964_BJ_润农节水.md",
-    "02_Company_Analysis/北交所/920961_BJ_创远信科.md",
-    "02_Company_Analysis/北交所/920957_BJ_汉维科技.md",
-    "02_Company_Analysis/北交所/920953_BJ_国子软件.md",
-    "02_Company_Analysis/北交所/920950_BJ_迅安科技.md",
-    "02_Company_Analysis/北交所/920946_BJ_森萱医药.md",
-    "02_Company_Analysis/北交所/920943_BJ_优机股份.md",
-    "02_Company_Analysis/北交所/920942_SZ_恒立钻具.md",
-    "02_Company_Analysis/北交所/920932_SZ_科达自控.md",
-    "02_Company_Analysis/北交所",
-    "02_Company_Analysis/其他未分类",
-    "08_审计与质地/审计风险榜.base",
-    "08_审计与质地/优质生意池.base",
-    "08_审计与质地",
-    "07_行业研究/行业景气排行.base",
-    "07_行业研究/行业深读",
-    "02_Company_Analysis/保险Ⅱ",
-    "02_Company_Analysis/国有大型银行Ⅱ",
+    "02_Company_Analysis/北交所/00_北交所名录.md.bak-20261113-101455",
+    "_test_pipe.md",
+    "01_Daily/2026-11-11_公告机会日报-盘后.md",
+    "01_Daily/2026-11-12_公告机会日报.md",
+    "01_Daily/2026-11-11_公告机会日报.md",
+    "01_Daily/2026-11-11_龙虎榜明细.md",
+    "01_Daily/2026-11-11_资金异动.md",
+    "01_Daily/2026-11-04_公告机会日报.md",
+    "01_Daily/00_情报总览.md",
+    "00_Inbox/Archive/Untitled 1.base",
+    "00_Inbox/Archive/Untitled.base",
     "00_Inbox/Archive/未命名.canvas",
+    "00_Inbox/Archive/未命名.base",
+    "00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文.pdf",
+    "00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文_translated.pdf",
+    "01_Daily/2026-11-03_公告机会日报-盘后.md",
+    "01_Daily/2026-11-03_资金异动.md",
+    "01_Daily/2026-11-03_龙虎榜明细.md",
+    "01_Daily/调研与互动/00_机构调研_总览.md",
+    "01_Daily/调研与互动/00_雷达总览.md",
+    "01_Daily/2026-11-03_公告机会日报.md",
+    "01_Daily/2026-11-03_现金选择权三案对照.md",
+    "02_Company_Analysis/航空机场/601021_SH_春秋航空.md",
+    "01_Daily/2026-11-02_601021_三季报点评.md",
+    "01_Daily/2026-11-02_601012_三季报点评.md",
+    "02_Company_Analysis/00_申万行业名录.md",
+    "01_Daily/2026-11-02_资金异动.md",
+    "01_Daily/2026-11-02_席位画像.md",
+    "01_Daily/2026-11-02_龙虎榜明细.md",
+    "02_Company_Analysis/通用设备/000530_SZ_冰山冷热.md",
+    "02_Company_Analysis/影视院线/300182_SZ_捷成股份.md",
+    "01_Daily/2026-11-02_公告机会日报-盘后.md",
+    "01_Daily/调研与互动/2026-10-26_调研.md.bak-1028a",
+    "01_Daily/调研与互动",
+    "02_Company_Analysis/小金属/sedVEfHb7",
+    "02_Company_Analysis/通用设备/sedgNCZEB",
+    "02_Company_Analysis/半导体/sedUs68AV",
     "未命名.canvas",
-    "English Training/2026年4月-7月中电建/Day 7公司推介/组织机构图Organization Chart.jpg",
-    "English Training/2026年4月-7月中电建/线上1班/Day 1& 2 Fidic银皮书培训/EPC 全周期.png",
-    "English Training/2026年4月-7月中电建/线下班/Day 2 & 3 Fidic银皮书培训/EPC 全周期.png",
-    "English Training/2026年4月-7月中电建/线下班/Day 7公司推介/组织机构图Organization Chart.jpg",
-    "English Training/参考材料/LR参考材料/函件/信函001-00192/电缆/400 电厂电缆.jpg",
-    "English Training/参考材料/LR参考材料/10信函/汇总404-447/C-00413  边坡防护 二版/六边形砖照片/IMG_0180.jpg",
-    "English Training/参考材料/LR参考材料/10信函/汇总404-447/C-00413  边坡防护 二版/六边形砖照片/DSC03560.JPG",
-    "English Training/参考材料/LR参考材料/10信函/汇总404-447/C-00413  边坡防护 二版/六边形砖照片/DSC00110.JPG",
-    "English Training/参考材料/LR参考材料/10信函/汇总404-447/C-00413  边坡防护 二版/六边形砖照片/DSC00104.JPG",
-    "English Training/参考材料/国际工程英语培训书面参考资料/国际工程英语培训资料/绿皮书8-12、15单元/Unit 8 工程进度会议现场图.jpg"
+    "Inbox/未命名.canvas"
   ]
 }

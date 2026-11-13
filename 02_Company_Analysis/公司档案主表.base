@@ -1,0 +1,117 @@
+filters:
+  and:
+    - file.inFolder("02_Company_Analysis")
+    - 'file.ext == "md"'
+
+formulas:
+  days_since_update: '(now() - file.mtime).days'
+
+properties:
+  note.code:
+    displayName: "代码"
+  note.name:
+    displayName: "名称"
+  note.sw_l2:
+    displayName: "申万二级"
+  note.market:
+    displayName: "市场"
+  note.roe:
+    displayName: "ROE"
+  note.quality_score:
+    displayName: "质量分"
+  note.audit_high:
+    displayName: "审计高危"
+  note.biz_type:
+    displayName: "生意类型"
+  note.dossier_updated:
+    displayName: "档案更新日"
+  note.dossier_tier:
+    displayName: "档案等级"
+  formula.days_since_update:
+    displayName: "距上次更新(天)"
+
+views:
+  - type: table
+    name: "全公司主表"
+    order:
+      - code
+      - name
+      - sw_l2
+      - roe
+      - quality_score
+      - audit_high
+      - dossier_updated
+      - formula.days_since_update
+    sort:
+      - property: sw_l2
+        direction: ASC
+      - property: code
+        direction: ASC
+    summaries:
+      roe: Average
+      quality_score: Average
+      formula.days_since_update: Median
+      audit_high: Checked
+
+  - type: table
+    name: "按申万二级分组"
+    groupBy:
+      property: sw_l2
+      direction: ASC
+    order:
+      - code
+      - name
+      - roe
+      - quality_score
+      - audit_high
+      - formula.days_since_update
+    sort:
+      - property: code
+        direction: ASC
+
+  - type: table
+    name: "优质生意池"
+    filters:
+      and:
+        - 'quality_score >= 70'
+    order:
+      - code
+      - name
+      - sw_l2
+      - biz_type
+      - roe
+      - quality_score
+    sort:
+      - property: quality_score
+        direction: DESC
+
+  - type: table
+    name: "审计风险榜"
+    filters:
+      and:
+        - 'audit_high == true'
+    order:
+      - code
+      - name
+      - sw_l2
+      - audit_high
+      - dossier_updated
+      - formula.days_since_update
+    sort:
+      - property: formula.days_since_update
+        direction: DESC
+
+  - type: table
+    name: "档案待更新(>90天)"
+    filters:
+      and:
+        - '(now() - file.mtime).days > 90'
+    order:
+      - code
+      - name
+      - sw_l2
+      - dossier_updated
+      - formula.days_since_update
+    sort:
+      - property: formula.days_since_update
+        direction: DESC
