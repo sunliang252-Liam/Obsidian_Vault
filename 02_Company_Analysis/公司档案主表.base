@@ -1,64 +1,61 @@
 filters:
   and:
     - file.inFolder("02_Company_Analysis")
-    - 'file.ext == "md"'
-
+    - file.ext == "md"
 formulas:
-  days_since_update: '(now() - file.mtime).days'
-  roe_pct: 'if(roe, (roe * 100).round(1), "")'
-
+  days_since_update: (now() - file.mtime).days
+  roe_pct: if(roe, (roe * 100).round(1), "")
+  quality_grade: if(quality_pct, if(quality_pct >= 90, "A", if(quality_pct >= 75, "B", if(quality_pct >= 50, "C", if(quality_pct >= 25, "D", "E")))), "")
 properties:
   note.code:
-    displayName: "代码"
+    displayName: 代码
   note.name:
-    displayName: "名称"
+    displayName: 名称
   note.sw_l2:
-    displayName: "申万二级"
-  note.market:
-    displayName: "市场"
+    displayName: 申万二级
   note.roe:
-    displayName: "ROE(小数)"
+    displayName: ROE(小数)
   formula.roe_pct:
-    displayName: "ROE%"
+    displayName: ROE%
   note.quality_score:
-    displayName: "质量分"
+    displayName: 质量分(原始·口径未知)
+  note.quality_pct:
+    displayName: 质量分(百分位)
+  formula.quality_grade:
+    displayName: 质量档
   note.audit_high:
-    displayName: "高危条数"
+    displayName: 高危条数
   note.audit_medium:
-    displayName: "中危条数"
+    displayName: 中危条数
   note.biz_type:
-    displayName: "生意类型"
-  note.dossier_tier:
-    displayName: "档案等级"
+    displayName: 生意类型
   note.dossier_updated:
-    displayName: "档案更新日"
+    displayName: 档案更新日
   formula.days_since_update:
-    displayName: "距上次更新(天)"
-
+    displayName: 距上次更新(天)
 views:
   - type: table
-    name: "全公司主表"
+    name: 全公司主表
     order:
       - code
       - name
       - sw_l2
       - formula.roe_pct
-      - quality_score
+      - quality_pct
+      - formula.quality_grade
       - audit_high
       - biz_type
-      - dossier_updated
       - formula.days_since_update
     sort:
-      - property: quality_score
+      - property: quality_pct
         direction: DESC
     summaries:
-      quality_score: Average
       formula.roe_pct: Average
+      quality_pct: Average
       formula.days_since_update: Median
       audit_high: Sum
-
   - type: table
-    name: "按申万二级分组"
+    name: 按申万二级分组
     groupBy:
       property: sw_l2
       direction: ASC
@@ -66,80 +63,76 @@ views:
       - code
       - name
       - formula.roe_pct
-      - quality_score
+      - quality_pct
+      - formula.quality_grade
       - audit_high
-      - formula.days_since_update
     sort:
-      - property: quality_score
+      - property: quality_pct
         direction: DESC
-
   - type: table
-    name: "优质生意池(质量分≥24)"
+    name: 优质生意池(官方标准)
     filters:
       and:
-        - 'quality_score >= 24'
+        - file.hasTag("优质池")
     order:
       - code
       - name
       - sw_l2
+      - formula.roe_pct
+      - quality_pct
+      - formula.quality_grade
       - biz_type
-      - formula.roe_pct
-      - quality_score
-      - audit_high
-    sort:
-      - property: quality_score
-        direction: DESC
-
-  - type: cards
-    name: "理想型生意"
-    filters:
-      and:
-        - 'biz_type == "理想型"'
-    order:
-      - file.name
-      - quality_score
-      - formula.roe_pct
-      - sw_l2
-
-  - type: table
-    name: "高ROE(≥15%)"
-    filters:
-      and:
-        - 'roe >= 0.15'
-    order:
-      - code
-      - name
-      - sw_l2
-      - biz_type
-      - formula.roe_pct
-      - quality_score
       - audit_high
     sort:
       - property: roe
         direction: DESC
-
   - type: table
-    name: "审计风险榜(高危≥3)"
+    name: 质量分Top10%(百分位≥90)
     filters:
       and:
-        - 'audit_high >= 3'
+        - note.quality_pct >= 90
     order:
       - code
       - name
       - sw_l2
-      - audit_high
-      - audit_medium
-      - dossier_updated
-      - formula.days_since_update
+      - quality_pct
+      - formula.quality_grade
+      - formula.roe_pct
+      - biz_type
     sort:
-      - property: audit_high
+      - property: quality_pct
         direction: DESC
-
-  - type: table
-    name: "审计警示(高危≥2)"
+  - type: cards
+    name: 理想型生意
     filters:
       and:
-        - 'audit_high >= 2'
+        - biz_type == "理想型"
+    order:
+      - file.name
+      - quality_pct
+      - formula.roe_pct
+      - sw_l2
+  - type: table
+    name: 高ROE(≥15%)
+    filters:
+      and:
+        - roe >= 0.15
+    order:
+      - code
+      - name
+      - sw_l2
+      - biz_type
+      - formula.roe_pct
+      - quality_pct
+      - audit_high
+    sort:
+      - property: roe
+        direction: DESC
+  - type: table
+    name: 审计风险榜(高危≥3)
+    filters:
+      and:
+        - audit_high >= 3
     order:
       - code
       - name
@@ -147,16 +140,31 @@ views:
       - audit_high
       - audit_medium
       - formula.roe_pct
-      - quality_score
+      - formula.days_since_update
     sort:
       - property: audit_high
         direction: DESC
-
   - type: table
-    name: "档案待更新(>90天)"
+    name: 审计警示(高危≥2)
     filters:
       and:
-        - '(now() - file.mtime).days > 90'
+        - audit_high >= 2
+    order:
+      - code
+      - name
+      - sw_l2
+      - audit_high
+      - audit_medium
+      - formula.roe_pct
+      - quality_pct
+    sort:
+      - property: audit_high
+        direction: DESC
+  - type: table
+    name: 档案待更新(>90天)
+    filters:
+      and:
+        - (now() - file.mtime).days > 90
     order:
       - code
       - name

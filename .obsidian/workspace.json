@@ -13,11 +13,11 @@
             "state": {
               "type": "bases",
               "state": {
-                "file": "02_Company_Analysis/公司档案主表.base",
-                "viewName": "全公司主表"
+                "file": "08_审计与质地/优质生意池.base",
+                "viewName": "优质生意池"
               },
               "icon": "lucide-table",
-              "title": "公司档案主表"
+              "title": "优质生意池"
             }
           }
         ]
@@ -218,11 +218,16 @@
   },
   "active": "db38d4ad7cbf678c",
   "lastOpenFiles": [
+    "07_行业研究/行业景气排行.base",
+    "02_Company_Analysis/公司档案主表.base",
+    "08_审计与质地/01_优质生意池.md",
+    "08_审计与质地/00_财务审计总览.md",
+    "06_Macro_Data/Spot_Proxy_Report.md",
+    "06_Macro_Data/Spot_Price_Dashboard_Full.md",
     "07_行业研究/00_行业景气度总览.md",
     "04_Resources/attachments",
     "01_Daily/00_情报总览.md",
     "01_Daily/2026-11-12_公告机会日报.md",
-    "02_Company_Analysis/公司档案主表.base",
     "02_Company_Analysis/北交所/00_北交所名录.md.bak-20261113-101455",
     "_test_pipe.md",
     "01_Daily/2026-11-11_公告机会日报-盘后.md",
@@ -248,11 +253,6 @@
     "01_Daily/2026-11-02_601012_三季报点评.md",
     "02_Company_Analysis/00_申万行业名录.md",
     "01_Daily/2026-11-02_资金异动.md",
-    "01_Daily/2026-11-02_席位画像.md",
-    "01_Daily/2026-11-02_龙虎榜明细.md",
-    "02_Company_Analysis/通用设备/000530_SZ_冰山冷热.md",
-    "02_Company_Analysis/影视院线/300182_SZ_捷成股份.md",
-    "01_Daily/2026-11-02_公告机会日报-盘后.md",
     "01_Daily/调研与互动/2026-10-26_调研.md.bak-1028a",
     "01_Daily/调研与互动",
     "未命名.canvas",
