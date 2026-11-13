@@ -11,13 +11,14 @@
             "id": "db38d4ad7cbf678c",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "08_审计与质地/优质生意池.base",
-                "viewName": "优质生意池"
+                "file": "02_Company_Analysis/化妆品/603605_SH_珀莱雅.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "优质生意池"
+              "icon": "lucide-file",
+              "title": "603605_SH_珀莱雅"
             }
           }
         ]
@@ -218,6 +219,7 @@
   },
   "active": "db38d4ad7cbf678c",
   "lastOpenFiles": [
+    "08_审计与质地/优质生意池.base",
     "07_行业研究/行业景气排行.base",
     "02_Company_Analysis/公司档案主表.base",
     "08_审计与质地/01_优质生意池.md",
@@ -254,7 +256,6 @@
     "02_Company_Analysis/00_申万行业名录.md",
     "01_Daily/2026-11-02_资金异动.md",
     "01_Daily/调研与互动/2026-10-26_调研.md.bak-1028a",
-    "01_Daily/调研与互动",
     "未命名.canvas",
     "Inbox/未命名.canvas"
   ]
