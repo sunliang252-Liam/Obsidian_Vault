@@ -23,7 +23,9 @@ properties:
   note.quality_score:
     displayName: "质量分"
   note.audit_high:
-    displayName: "审计高危"
+    displayName: "高危条数"
+  note.audit_medium:
+    displayName: "中危条数"
   note.biz_type:
     displayName: "生意类型"
   note.dossier_tier:
@@ -53,7 +55,7 @@ views:
       quality_score: Average
       formula.roe_pct: Average
       formula.days_since_update: Median
-      audit_high: Checked
+      audit_high: Sum
 
   - type: table
     name: "按申万二级分组"
@@ -72,7 +74,7 @@ views:
         direction: DESC
 
   - type: table
-    name: "优质生意池(质量分 P90 以上)"
+    name: "优质生意池(质量分≥24)"
     filters:
       and:
         - 'quality_score >= 24'
@@ -100,7 +102,7 @@ views:
       - sw_l2
 
   - type: table
-    name: "高 ROE (≥15%)"
+    name: "高ROE(≥15%)"
     filters:
       and:
         - 'roe >= 0.15'
@@ -111,24 +113,43 @@ views:
       - biz_type
       - formula.roe_pct
       - quality_score
+      - audit_high
     sort:
       - property: roe
         direction: DESC
 
   - type: table
-    name: "审计风险榜"
+    name: "审计风险榜(高危≥3)"
     filters:
       and:
-        - 'audit_high == true'
+        - 'audit_high >= 3'
     order:
       - code
       - name
       - sw_l2
       - audit_high
+      - audit_medium
       - dossier_updated
       - formula.days_since_update
     sort:
-      - property: formula.days_since_update
+      - property: audit_high
+        direction: DESC
+
+  - type: table
+    name: "审计警示(高危≥2)"
+    filters:
+      and:
+        - 'audit_high >= 2'
+    order:
+      - code
+      - name
+      - sw_l2
+      - audit_high
+      - audit_medium
+      - formula.roe_pct
+      - quality_score
+    sort:
+      - property: audit_high
         direction: DESC
 
   - type: table
