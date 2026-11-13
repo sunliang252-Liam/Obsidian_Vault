@@ -1,4 +1,5 @@
 {
-  "folder": "",
-  "template": "Welcome"
+    "template":  "05_Templates/Daily_Template",
+    "folder":  "01_Daily",
+    "format":  "YYYY-MM-DD"
 }

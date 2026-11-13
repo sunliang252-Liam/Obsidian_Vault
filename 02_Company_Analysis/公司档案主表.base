@@ -5,6 +5,7 @@ filters:
 
 formulas:
   days_since_update: '(now() - file.mtime).days'
+  roe_pct: 'if(roe, (roe * 100).round(1), "")'
 
 properties:
   note.code:
@@ -16,17 +17,19 @@ properties:
   note.market:
     displayName: "市场"
   note.roe:
-    displayName: "ROE"
+    displayName: "ROE(小数)"
+  formula.roe_pct:
+    displayName: "ROE%"
   note.quality_score:
     displayName: "质量分"
   note.audit_high:
     displayName: "审计高危"
   note.biz_type:
     displayName: "生意类型"
-  note.dossier_updated:
-    displayName: "档案更新日"
   note.dossier_tier:
     displayName: "档案等级"
+  note.dossier_updated:
+    displayName: "档案更新日"
   formula.days_since_update:
     displayName: "距上次更新(天)"
 
@@ -37,19 +40,18 @@ views:
       - code
       - name
       - sw_l2
-      - roe
+      - formula.roe_pct
       - quality_score
       - audit_high
+      - biz_type
       - dossier_updated
       - formula.days_since_update
     sort:
-      - property: sw_l2
-        direction: ASC
-      - property: code
-        direction: ASC
+      - property: quality_score
+        direction: DESC
     summaries:
-      roe: Average
       quality_score: Average
+      formula.roe_pct: Average
       formula.days_since_update: Median
       audit_high: Checked
 
@@ -61,28 +63,56 @@ views:
     order:
       - code
       - name
-      - roe
+      - formula.roe_pct
       - quality_score
       - audit_high
       - formula.days_since_update
     sort:
-      - property: code
-        direction: ASC
+      - property: quality_score
+        direction: DESC
 
   - type: table
-    name: "优质生意池"
+    name: "优质生意池(质量分 P90 以上)"
     filters:
       and:
-        - 'quality_score >= 70'
+        - 'quality_score >= 24'
     order:
       - code
       - name
       - sw_l2
       - biz_type
-      - roe
+      - formula.roe_pct
       - quality_score
+      - audit_high
     sort:
       - property: quality_score
+        direction: DESC
+
+  - type: cards
+    name: "理想型生意"
+    filters:
+      and:
+        - 'biz_type == "理想型"'
+    order:
+      - file.name
+      - quality_score
+      - formula.roe_pct
+      - sw_l2
+
+  - type: table
+    name: "高 ROE (≥15%)"
+    filters:
+      and:
+        - 'roe >= 0.15'
+    order:
+      - code
+      - name
+      - sw_l2
+      - biz_type
+      - formula.roe_pct
+      - quality_score
+    sort:
+      - property: roe
         direction: DESC
 
   - type: table

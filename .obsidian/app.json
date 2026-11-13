@@ -1,1 +1,8 @@
-{}
+{
+    "newLinkFormat":  "shortest",
+    "useMarkdownLinks":  false,
+    "showUnsupportedFiles":  true,
+    "attachmentFolderPath":  "04_Resources/attachments",
+    "newFileLocation":  "00_Inbox",
+    "alwaysUpdateLinks":  true
+}
