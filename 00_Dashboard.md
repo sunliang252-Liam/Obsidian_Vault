@@ -76,3 +76,52 @@
 
 ---
 *“投资不是在赌博，而是在为未来的确定性定价。”*
+---
+
+## 🗂️ 全库补充索引（2026-11-13 补链）
+
+> 以下页面此前**无任何入链**（Obsidian 孤儿笔记），统一在此挂载，避免成为信息孤岛。
+
+### 💼 投资笔记
+- [[Investments/百龙创园]] ｜ 消费升级 / 阿洛酮糖
+- [[Investments/北化股份]] ｜ 军工防护订单
+- [[Investments/大湖股份]] ｜ 医疗服务 + 预制菜转型
+- [[Investments/海能达]] ｜ 专网通信 / 诉讼风险
+- [[Investments/航发动力2025年年报分析]] ｜ 年报拆解
+- [[Investments/投资结构性洞察 20260421.pdf]] ｜ PDF 报告
+
+### 👤 人物与背景
+- [[People/徐留胜背景调查]]
+
+### 🛠️ 技术与工具
+- [[03_Technical/Macro_Composite_Center]] ｜ 宏观综合中枢
+- [[03_Technical/Commodity_Radar]] ｜ 大宗商品雷达
+- [[03_Technical/Infrastructure/一键配置脚本]]
+- [[03_Technical/Infrastructure/v2raya-autostart-config]]
+- [[03_Technical/System/fintech_setup.sh]]
+- [[Tech & Learning/git]]
+
+### 📊 宏观数据看板
+- [[06_Macro_Data/Spot_Price_Dashboard_Full]] ｜ 现货价格看板
+- [[06_Macro_Data/Spot_Proxy_Report]] ｜ 现货代理报告
+
+### 📰 日记与专题
+- [[01_Daily/2026-11-02_601021_三季报点评]]
+- [[01_Daily/2026-11-03_现金选择权三案对照]]
+- [[02_Company_Analysis/航发动力“十五五”战略发展蓝图]]
+- [[00_新转换文档索引]]
+
+### 🏢 档案体系维护
+- [[02_Company_Analysis/00_公司档案覆盖总览]] ｜ 覆盖率统计
+- [[02_Company_Analysis/公司档案主表.base]] ｜ **Bases 主表（5 视图）**
+- [[05_Templates/Daily_Template]] ｜ 日记模板
+### 🔗 附件与 Bases
+- [[02_Company_Analysis/小家电/002614_SZ_奥佳华]] ｜ 补挂档案
+- [[08_审计与质地/审计风险榜.base]] ｜ Bases 审计风险榜
+- [[08_审计与质地/优质生意池.base]] ｜ Bases 优质生意池
+- [[04_Resources/海光信息：海光信息技术股份有限公司2024年年度报告.pdf]] ｜ 年报原件
+- [[04_Resources/通达信iTendx终端介绍.pptx]]
+- [[04_Resources/Python接口使用手册.pdf]] ｜ 与 [[Tech & Learning/Python接口使用手册.pdf]] 同名两份
+- [[03_Technical/Tools/analyzer.pdf]] ｜ [[03_Technical/Tools/downloader.pdf]] ｜ [[03_Technical/Tools/exporter.pdf]] ｜ [[03_Technical/Tools/pipeline.pdf]] ｜ [[03_Technical/Tools/requirements.pdf]] ｜ [[03_Technical/Tools/example.pdf]]
+- [[00_Inbox/Archive/一件配置脚本.docx]]
+- [[00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文.pdf]] ｜ [[00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文_translated.pdf]]
