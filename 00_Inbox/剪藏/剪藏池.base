@@ -1,0 +1,72 @@
+filters:
+  and:
+    - file.hasTag("剪藏")
+
+properties:
+  note.title:
+    displayName: "标题"
+  note.created:
+    displayName: "剪藏日期"
+  note.domain:
+    displayName: "来源站"
+  note.author:
+    displayName: "作者"
+  note.published:
+    displayName: "发布日"
+  note.url:
+    displayName: "原文链接"
+
+views:
+  - type: table
+    name: "全部剪藏"
+    order:
+      - title
+      - created
+      - domain
+      - author
+      - file.mtime
+    sort:
+      - property: created
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    summaries:
+      created: Latest
+
+  - type: table
+    name: "按来源站分组"
+    groupBy:
+      property: domain
+      direction: ASC
+    order:
+      - title
+      - created
+      - author
+      - file.mtime
+    sort:
+      - property: created
+        direction: DESC
+
+  - type: table
+    name: "按剪藏日期分组"
+    groupBy:
+      property: created
+      direction: DESC
+    order:
+      - title
+      - domain
+      - author
+    sort:
+      - property: title
+        direction: ASC
+
+  - type: cards
+    name: "最近 20 条"
+    limit: 20
+    order:
+      - title
+      - domain
+      - created
+    sort:
+      - property: created
+        direction: DESC

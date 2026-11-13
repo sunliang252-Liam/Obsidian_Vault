@@ -126,3 +126,8 @@
 - [[00_Inbox/Archive/一件配置脚本.docx]]
 - [[00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文.pdf]] ｜ [[00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文_translated.pdf]]
 - [[07_行业研究/申万行业结构图.canvas]] ｜ **申万行业结构图（Canvas）**
+### ✂️ 剪藏（defuddle + knap）
+- [[00_Inbox/剪藏/README-剪藏说明]] ｜ 用法与实测兼容性
+- [[00_Inbox/剪藏/剪藏池.base]] ｜ 剪藏池视图（按来源/日期）
+- [[05_Templates/剪藏模板]] ｜ 剪藏模板
+- [[03_Technical/Tools/clip.ps1]] ｜ 剪藏脚本

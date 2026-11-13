@@ -11,17 +11,13 @@
             "id": "db38d4ad7cbf678c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "bases",
               "state": {
-                "file": "07_行业研究/申万行业结构图.canvas",
-                "viewState": {
-                  "x": -100,
-                  "y": 1081.4694917300249,
-                  "zoom": -1.65
-                }
+                "file": "00_Inbox/剪藏/剪藏池.base",
+                "viewName": "全部剪藏"
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "申万行业结构图"
+              "icon": "lucide-table",
+              "title": "剪藏池"
             }
           }
         ]
@@ -222,9 +218,17 @@
   },
   "active": "db38d4ad7cbf678c",
   "lastOpenFiles": [
+    "07_行业研究/申万行业结构图.canvas",
+    "00_Inbox/剪藏/README-剪藏说明.md",
+    "00_Inbox/剪藏/剪藏池.base",
+    "00_Inbox/剪藏/2026-11-13 11月11日东方财富财经晚报（附新闻联播） _ 东方财富网.md",
+    "00_Inbox/剪藏/2026-11-13 财经资讯早知道【11月13日 星期五】_腾讯新闻.md",
+    "00_Inbox/剪藏/2026-11-13 交易型开放式指数基金 - 维基百科，自由的百科全书.md",
+    "00_Inbox/剪藏",
+    "03_Technical/Tools/clip.ps1",
+    "05_Templates/剪藏模板.md",
     "01_Daily/2026-10-30_龙虎榜明细.md",
     "01_Daily/00_情报总览.md",
-    "07_行业研究/申万行业结构图.canvas",
     "00_Dashboard.md",
     "00_新转换文档索引.md",
     "08_审计与质地/优质生意池.base",
@@ -248,18 +252,9 @@
     "01_Daily/2026-11-11_资金异动.md",
     "01_Daily/2026-11-04_公告机会日报.md",
     "00_Inbox/Archive/Untitled 1.base",
-    "00_Inbox/Archive/Untitled.base",
     "00_Inbox/Archive/未命名.canvas",
-    "00_Inbox/Archive/未命名.base",
-    "00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文.pdf",
     "01_Daily/2026-11-03_公告机会日报-盘后.md",
     "01_Daily/2026-11-03_资金异动.md",
-    "01_Daily/2026-11-03_龙虎榜明细.md",
-    "01_Daily/调研与互动/00_机构调研_总览.md",
-    "01_Daily/调研与互动/00_雷达总览.md",
-    "01_Daily/2026-11-03_公告机会日报.md",
-    "01_Daily/2026-11-03_现金选择权三案对照.md",
-    "02_Company_Analysis/航空机场/601021_SH_春秋航空.md",
     "未命名.canvas",
     "Inbox/未命名.canvas"
   ]
