@@ -11,14 +11,17 @@
             "id": "db38d4ad7cbf678c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "02_Company_Analysis/化妆品/603605_SH_珀莱雅.md",
-                "mode": "source",
-                "source": false
+                "file": "07_行业研究/申万行业结构图.canvas",
+                "viewState": {
+                  "x": -100,
+                  "y": 1081.4694917300249,
+                  "zoom": -1.65
+                }
               },
-              "icon": "lucide-file",
-              "title": "603605_SH_珀莱雅"
+              "icon": "lucide-layout-dashboard",
+              "title": "申万行业结构图"
             }
           }
         ]
@@ -219,16 +222,23 @@
   },
   "active": "db38d4ad7cbf678c",
   "lastOpenFiles": [
+    "01_Daily/2026-10-30_龙虎榜明细.md",
+    "01_Daily/00_情报总览.md",
+    "07_行业研究/申万行业结构图.canvas",
+    "00_Dashboard.md",
+    "00_新转换文档索引.md",
     "08_审计与质地/优质生意池.base",
-    "07_行业研究/行业景气排行.base",
-    "02_Company_Analysis/公司档案主表.base",
+    "08_审计与质地/审计风险榜.base",
     "08_审计与质地/01_优质生意池.md",
     "08_审计与质地/00_财务审计总览.md",
+    "07_行业研究/00_行业景气度总览.md",
+    "07_行业研究/01_全行业排行明细.md",
+    "02_Company_Analysis/化妆品/603605_SH_珀莱雅.md",
+    "07_行业研究/行业景气排行.base",
+    "02_Company_Analysis/公司档案主表.base",
     "06_Macro_Data/Spot_Proxy_Report.md",
     "06_Macro_Data/Spot_Price_Dashboard_Full.md",
-    "07_行业研究/00_行业景气度总览.md",
     "04_Resources/attachments",
-    "01_Daily/00_情报总览.md",
     "01_Daily/2026-11-12_公告机会日报.md",
     "02_Company_Analysis/北交所/00_北交所名录.md.bak-20261113-101455",
     "_test_pipe.md",
@@ -242,7 +252,6 @@
     "00_Inbox/Archive/未命名.canvas",
     "00_Inbox/Archive/未命名.base",
     "00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文.pdf",
-    "00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文_translated.pdf",
     "01_Daily/2026-11-03_公告机会日报-盘后.md",
     "01_Daily/2026-11-03_资金异动.md",
     "01_Daily/2026-11-03_龙虎榜明细.md",
@@ -251,11 +260,6 @@
     "01_Daily/2026-11-03_公告机会日报.md",
     "01_Daily/2026-11-03_现金选择权三案对照.md",
     "02_Company_Analysis/航空机场/601021_SH_春秋航空.md",
-    "01_Daily/2026-11-02_601021_三季报点评.md",
-    "01_Daily/2026-11-02_601012_三季报点评.md",
-    "02_Company_Analysis/00_申万行业名录.md",
-    "01_Daily/2026-11-02_资金异动.md",
-    "01_Daily/调研与互动/2026-10-26_调研.md.bak-1028a",
     "未命名.canvas",
     "Inbox/未命名.canvas"
   ]

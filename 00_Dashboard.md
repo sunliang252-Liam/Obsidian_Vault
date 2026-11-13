@@ -125,3 +125,4 @@
 - [[03_Technical/Tools/analyzer.pdf]] ｜ [[03_Technical/Tools/downloader.pdf]] ｜ [[03_Technical/Tools/exporter.pdf]] ｜ [[03_Technical/Tools/pipeline.pdf]] ｜ [[03_Technical/Tools/requirements.pdf]] ｜ [[03_Technical/Tools/example.pdf]]
 - [[00_Inbox/Archive/一件配置脚本.docx]]
 - [[00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文.pdf]] ｜ [[00_Inbox/Archive/未命名/张晓燕的论文深入研究/张晓燕论文全文_translated.pdf]]
+- [[07_行业研究/申万行业结构图.canvas]] ｜ **申万行业结构图（Canvas）**
