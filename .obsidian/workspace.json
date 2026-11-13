@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Daily/调研与互动/00_机构调研_总览.md",
+                "file": "00_Inbox/剪藏/README-剪藏说明.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_机构调研_总览"
+              "title": "README-剪藏说明"
             }
           }
         ]
@@ -217,20 +217,24 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "db38d4ad7cbf678c",
+  "active": "5db9566c0f2848c0",
   "lastOpenFiles": [
+    "01_Daily/2026-11-13_龙虎榜明细.md",
+    "01_Daily/2026-11-13_资金异动.md",
+    "01_Daily/2026-11-13_公告机会日报-盘后.md",
+    "00_Inbox/剪藏/剪藏池.base",
+    "00_Inbox/剪藏/2026-11-13 交易型开放式指数基金 - 维基百科，自由的百科全书.md",
+    "00_Inbox/剪藏/2026-11-13 财经资讯早知道【11月13日 星期五】_腾讯新闻.md",
+    "00_Inbox/剪藏/2026-11-13 11月11日东方财富财经晚报（附新闻联播） _ 东方财富网.md",
+    "01_Daily/调研与互动/00_机构调研_总览.md",
     "01_Daily/调研与互动/00_雷达总览.md",
     "01_Daily/调研与互动/00_每日互动_总览.md",
     "01_Daily/调研与互动/01_互动_台账.md",
     "01_Daily/2026-10-30_龙虎榜明细.md",
     "01_Daily/2026-10-30_资金异动.md",
     "01_Daily/2026-11-02_601021_三季报点评.md",
-    "00_Inbox/剪藏/剪藏池.base",
     "07_行业研究/申万行业结构图.canvas",
     "00_Inbox/剪藏/README-剪藏说明.md",
-    "00_Inbox/剪藏/2026-11-13 11月11日东方财富财经晚报（附新闻联播） _ 东方财富网.md",
-    "00_Inbox/剪藏/2026-11-13 财经资讯早知道【11月13日 星期五】_腾讯新闻.md",
-    "00_Inbox/剪藏/2026-11-13 交易型开放式指数基金 - 维基百科，自由的百科全书.md",
     "00_Inbox/剪藏",
     "03_Technical/Tools/clip.ps1",
     "05_Templates/剪藏模板.md",
@@ -251,10 +255,6 @@
     "04_Resources/attachments",
     "01_Daily/2026-11-12_公告机会日报.md",
     "02_Company_Analysis/北交所/00_北交所名录.md.bak-20261113-101455",
-    "_test_pipe.md",
-    "01_Daily/2026-11-11_公告机会日报-盘后.md",
-    "01_Daily/2026-11-11_公告机会日报.md",
-    "01_Daily/2026-11-11_龙虎榜明细.md",
     "00_Inbox/Archive/Untitled 1.base",
     "00_Inbox/Archive/未命名.canvas",
     "未命名.canvas",
